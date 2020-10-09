@@ -1,6 +1,17 @@
 class UI {
   constructor(){
     this.profile = document.getElementById('profile');
+    this.loading = document.getElementById('loading');
+  }
+
+  // Loading screen
+  load(){
+    this.loading.innerHTML = '<img src="img/loading.gif" alt="">';
+  }
+
+  // Hide Load
+  hideLoad(){
+    this.loading.innerHTML = '';
   }
 
   // Display profile
